@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Form</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
+<link rel="stylesheet" href="Site.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="json.js"> </script>
+	</head>
+    <body>
+        <div id = "preloader"><span class="spinner"></span></div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2">
+                <div class="panel panel-default standart">
+                    <div class="panel-heading">Total Companies</div>
+                    <div class="panel-body">
+                        <div class="col-md-offset-3 circle"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default standart">
+                <div class="panel-heading">List of Companies</div>
+                <div class="panel-body">
+                    <div class="list"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-default partners"> 
+                    <div class="panel-heading">
+                       <div class="row">
+                        <div class="col-md-4" "companyPartners">Company Partners</div>
+                        <div class="col-md-1 col-md-offset-3">SortBy</div>
+                        <div class="col-md-1"><a class="sort-shares" id="-1">Shares</a></div>
+                        <div class="col-md-1"><a class="sort-name" id="1">Name</a></div>
+                        <div class="col-md-1"><p class="closeCompanyPartners btn btn-default" >Close</p>                             </div>
+                       </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class = "partners-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2">
+                <div class="panel panel-default standart">
+                    <div class="panel-heading">Companies by Location</div>
+                    <div class="panel-body">
+                        <div id="chart_div"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default standart">
+                    <div class="panel-heading">NEWS</div>
+                    <div class="panel-body">
+                    <div class="newsPannel">
+                        <div class="panel-body news-panel"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-default newsPanel"> 
+                    <div class="panel-heading">
+                        <div class = "row">
+                            <div class="col-md-2">NEWS</div>
+                            <div class="col-md-offset-11">
+                                <p class="btn btn-default closeNewsBlock">Close</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="panel-body news-panel">
+                            <div class="col-md-4" ><img class="img-responsive news-image"/>
+                                <p class="author"></p>
+                                <p class="date"></p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
